@@ -11,8 +11,8 @@ import ctypes
 
 class ResizableArray:
 
-    def __init__(self,):
-        self.capacity = 1
+    def __init__(self, capacity):
+        self.capacity = capacity
         self.count = 0
         self.array = self._CreateArray(self.capacity)
         
@@ -77,5 +77,5 @@ class ResizableArray:
         
     def Print(self):
          for i in range(self.count):
-            print(self.array[i],end=" ")
+            print(self.array[i],end = " ")
 
